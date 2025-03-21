@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F5F5F5"
+    tools:ignore="ExtraText"> <!-- Fond clair pour un look moderne -->
+
+    <!-- Champ d'entrée avec CardView pour un style moderne -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="4dp">
+
+        <EditText
+            android:id="@+id/function_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Entrez une fonction (ex: x^2, sin(x))"
+            android:padding="16dp"
+            android:textColor="#212121"
+            android:textColorHint="#757575"
+            android:textSize="16sp"
+            android:background="@android:color/transparent"
+            tools:ignore="TouchTargetSizeCheck" />
+    </androidx.cardview.widget.CardView>
+
+    <!-- Bouton MaterialButton pour un look moderne -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_plot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tracer"
+        android:backgroundTint="#FF5722"
+    android:textColor="@android:color/white"
+    android:textSize="16sp"
+    android:padding="12dp"
+    app:cornerRadius="60dp"
+    android:layout_marginBottom="16dp"/>
+
+    <!-- GraphView avec CardView pour une meilleure visibilité -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="8dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="#FFFFFF"> <!-- Fond blanc pour contraster -->
+
+        <com.jjoe64.graphview.GraphView
+            android:id="@+id/graph"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp"/>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

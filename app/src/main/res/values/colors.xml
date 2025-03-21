@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="green">#4CAF50</color> <!-- Vert -->
+    <color name="white">#FFFFFF</color> <!-- Blanc -->
+    <color name="black">#000000</color> <!-- Noir -->
+    <color name="light_blue">#87CEEB</color>
+        <color name="orange">#FFA500</color>
+        <color name="red">#FF4500</color>
+        <color name="light_gray">#D3D3D3</color>
+        <color name="gray">#A9A9A9</color>
+    <color name="logo_black">#212121</color>
+    <color name="button_gray">#333333</color>
+</resources>

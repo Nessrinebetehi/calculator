@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="btn_mod" type="id" />
+    <item name="btn_factorial" type="id" />
+    <item name="btn_pi" type="id" />
+    <item name="btn_e" type="id" />
+    <item name="btn_exp_10" type="id" />
+    <item name="btn_inverse" type="id" />
+</resources>
